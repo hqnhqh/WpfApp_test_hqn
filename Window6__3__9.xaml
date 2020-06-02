@@ -1,0 +1,21 @@
+﻿<Window x:Class="WpfApp1.Window6__3__9"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="使用XML作为源" Height="205" Width="240">
+    <StackPanel Background="LightBlue">
+        <ListView x:Name="listViewStudents" Height="130" Margin="5">
+            <ListView.View>
+                <GridView>
+                    <!--加@表示XML元素的属性，不加@表示子级元素-->
+                    <GridViewColumn Header="Id" Width="80" DisplayMemberBinding="{Binding XPath=@Id}" />
+                    <GridViewColumn Header="Name" Width="120" DisplayMemberBinding="{Binding XPath=Name}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button Content="Load" Height="25" Margin="5,0" Click="Button_Click" />
+    </StackPanel>
+</Window>

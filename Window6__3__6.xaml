@@ -1,0 +1,22 @@
+﻿<Window x:Class="WpfApp1.Window6__3__6"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="没有Source的Binding" Height="135" Width="300">
+    <StackPanel Background="LightBlue">
+        <StackPanel.DataContext>
+            <local:Student Id="6" Age="29" Name="Tim" />
+        </StackPanel.DataContext>
+        <Grid>
+            <StackPanel>
+                <!--这里省略了Source，如果DataContext是一个简单类型对象，比如字符串时，Path=XXX也可以省略-->
+                <TextBox Text="{Binding Path=Id}" Margin="5" />
+                <TextBox Text="{Binding Path=Name}" Margin="5" />
+                <TextBox Text="{Binding Path=Age}" Margin="5" />
+            </StackPanel>
+        </Grid>
+    </StackPanel>
+</Window>

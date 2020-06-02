@@ -1,0 +1,27 @@
+﻿<Window x:Class="WpfApp1.Window4__4"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Window4__4" Height="300" Width="300">
+    <Window.Resources>
+        <XmlDataProvider x:Key="InventoryData" XPath="Inventory/Books">
+            <!-- x:XData 为数据提供者提供数据-->
+            <x:XData>
+                <Supermarkey xmlns="">
+                    <Fruits>
+                        <Fruit Name="Peach" />
+                        <Fruit Name="Peach" />
+                        <Fruit Name="Peach" />
+                    </Fruits>
+                    <Drinks>
+                        <Drink Name="Coca cola"/>
+                        <Dring Name="PEPSI Cola" />
+                    </Drinks>
+                </Supermarkey>
+            </x:XData>
+        </XmlDataProvider>
+    </Window.Resources>
+</Window>

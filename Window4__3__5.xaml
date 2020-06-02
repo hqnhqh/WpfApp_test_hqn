@@ -1,0 +1,14 @@
+﻿<Window x:Class="WpfApp1.Window4__3__5"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="{x:Static local:Window4__3__5.WindowTitle}" Height="120" Width="300">
+    <!-- x:Static的作用是在xaml中访问使用cs文件中定义的static成员 -->
+    <!-- 如果程序需要国际化支持，一般会把需要显示的字符串保存在资源类的static属性中 -->
+    <StackPanel>
+        <TextBlock FontSize="32" Text="{x:Static local:Window4__3__5.ShowText}" />
+    </StackPanel>
+</Window>

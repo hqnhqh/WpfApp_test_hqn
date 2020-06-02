@@ -1,0 +1,22 @@
+﻿<Window x:Class="WpfApp1.Window10__1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        mc:Ignorable="d"
+        Title="Window10__1" Height="100" Width="300" FontSize="16">
+    <Window.Resources>
+        <ResourceDictionary>
+            <sys:String x:Key="str">
+                沉舟侧畔千帆过，病树前头万木春
+            </sys:String>
+            <sys:Double x:Key="dbl">3.1415926</sys:Double>
+        </ResourceDictionary>
+    </Window.Resources>
+    <StackPanel>
+        <TextBlock Text="{StaticResource ResourceKey=str}" Margin="5" />
+        <!--<TextBlock Text="{StaticResource ResourceKey=dbl}"/>-->
+    </StackPanel>
+</Window>

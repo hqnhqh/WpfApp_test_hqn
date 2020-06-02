@@ -1,0 +1,22 @@
+﻿<Window x:Class="WpfApp1.Window5__3__3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Window5__3__3" Height="220" Width="220">
+    <Grid>
+        <ListBox Margin="5" x:Name="listBoxEmplyee">
+            <!--看上去是ListBox直接包含了一些CheckBox和Button，实际并非这样，给buttonVictor添加点击事件可以看出，按钮上面包了3层-->
+            <CheckBox x:Name="checkBoxTim" Content="Tim" />
+            <CheckBox x:Name="checkBoxTom" Content="Tom" />
+            <CheckBox x:Name="checkBoxBruce" Content="Bruce" />
+            <Button x:Name="buttonMess" Content="Mess" />
+            <Button x:Name="buttonOwen" Content="Owen" />
+            <Button x:Name="buttonVictor" Content="Victor" Click="ButtonVictor_Click"/>
+            <!--上例单纯为了说明ItemsControl能自动包装数据，实际工作中，除非元素永远固定，否则我们都是将cs程序逻辑中的数据给ItemsControl-->
+            <Button x:Name="buttonUpdate" Content="更新内容" Click="ButtonUpdate_Click" Margin="65 0"/>
+        </ListBox>
+    </Grid>
+</Window>

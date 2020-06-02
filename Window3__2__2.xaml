@@ -1,0 +1,18 @@
+﻿<Window x:Class="WpfApp1.Window3__2__2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Window3__2__2" Height="188" Width="300">
+    <Grid>
+        <Button Click="Button_Click" Content="OK"></Button>
+    </Grid>
+
+    <Window.Resources>
+        <!-- Child 是 Human 类型，但我们想赋值一个字符串类型"ABC" 就需要使用TypeConverter -->
+        <local:Human x:Key="human" Child="ABC"/>
+    </Window.Resources>
+
+</Window>

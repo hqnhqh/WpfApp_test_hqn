@@ -1,0 +1,16 @@
+﻿<Window x:Class="WpfApp1.Window4__2__3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Window4__2__3" Height="200" Width="300">
+    <StackPanel >
+        <!--这段代码通篇没有出现一个名字（name属性），但可以通过引用者的层级关系找到想要的控件-->
+        <!---加x:Name="btn"是为标签创建了一个引用对象，对象名是btn，这样在cs文件中就能直接使用btn-->
+        <!--Name 和 x:Name的区别是，标签有Name属性时可以通用，标签没有Name属性时，必须用x:Name为标签创建引用变量，方便cs代码中引用。因此所有标签都用x:Name能增强代码统一性和可读性-->
+        <TextBox Margin=" 5" />
+        <Button Content="OK" Margin=" 5" Click="Button_Click" />
+    </StackPanel>
+</Window>
